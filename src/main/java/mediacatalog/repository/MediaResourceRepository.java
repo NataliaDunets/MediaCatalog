@@ -13,7 +13,9 @@ public abstract class MediaResourceRepository {
 			case IMAGE:
 				return new ImageRepository();
 			case VIDEO:
-//				return new Videorepositoty();
+				return new VideoRepository();
+			case AUDIO:
+				return new AudioRepository();
 			default:
 				return null;
 		}

@@ -24,12 +24,7 @@ public class Action {
 	public void execute()
 			throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
 		MediaResourceRepository repository = MediaResourceRepository.getRepository(resourceType);
-		
-		// switch-case may be ???
-		
-		// case ADD: repository.add();
-		// etc
-		
+				
 		Method method = repository.getClass().getMethod(actionType.name().toLowerCase());
 		Object object;
 		
@@ -49,9 +44,10 @@ public class Action {
 				.map(MediaResource::toString)
 				.collect(Collectors.joining("\n")); 
 			
-			System.out.println(output);
+			System.out.println(output + resourceType);
 		} else {
-			System.out.println(object);
+			System.out.print(object); 
+			System.out.println(resourceType);
 		}
 	}
 

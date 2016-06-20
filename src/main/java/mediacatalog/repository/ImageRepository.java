@@ -2,7 +2,6 @@ package mediacatalog.repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import mediacatalog.model.Image;
 import mediacatalog.model.MediaResource;
 
@@ -20,6 +19,7 @@ public class ImageRepository extends MediaResourceRepository {
 	public List<Image> list() {
 		return images;
 	}
+	 
 	
 	/// piblic remove() {}
 
