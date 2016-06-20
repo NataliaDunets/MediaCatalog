@@ -12,8 +12,8 @@
 2. list
 
 ## query example
-### -resourse image -action add -name kitty 
+### -resource image -action add -name kitty 
 where "image" - resource type, "add" - type of request, "kitty" - file name.
 
-### -resourse image -action list
+### -resource image -action list
 where "list" - type of action.
